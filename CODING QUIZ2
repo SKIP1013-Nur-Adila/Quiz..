@@ -1,0 +1,25 @@
+package Tset;
+import java.util.Scanner;
+public class Two {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("Enter integer");
+		int User = input.nextInt();
+		
+		int reversed = 0;
+		
+		while(User!= 0) {
+			int next = User % 10;
+			reversed = reversed * 10 + next;
+			
+			User /= 10;
+		}
+		
+		System.out.println("Reversed Number: " + reversed);
+	}
+
+}
