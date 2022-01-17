@@ -1,0 +1,33 @@
+package Tset;
+import java.util.Scanner;
+public class One {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input=new Scanner(System.in);
+		
+		int ClassHeld, ClassAttended;
+		
+		System.out.print("Number of class held: ");
+		ClassHeld=input.nextInt();
+		System.out.print("Number of class attended: ");
+		ClassAttended=input.nextInt();
+		
+		double percentage = (( ClassAttended * 100) / ClassHeld) ; 
+		//percentage = percentage / 100;
+		
+		//System.out.println("ClassAttended " + ClassAttended);
+		System.out.println("Percentage of the class attended: " + percentage);
+		
+		if (percentage <= 0.75 ) {
+			System.out.println("Not allowed to sit in exam");
+		}
+		else {
+			System.out.println("Allowed to sit in exam");
+		}
+		
+
+	}
+
+}
